@@ -10,6 +10,8 @@ html,body{
 body{
     display: flex;
     align-items: center;
+    overflow:hidden;
+
 }
 
 h1{
@@ -31,8 +33,8 @@ input{
     box-sizing: border-box;
     background-color: #0D274B;
     width: 100%;
-    height: 36%;
-    min-height: 330px;
+    height: 39%;
+    min-height: 340px;
     border-top: 3PX solid;
     border-bottom: 3PX solid;
     border-color: #F0BE06;
@@ -46,7 +48,6 @@ input{
     display: grid;
     grid-template-rows: 1fr 4fr;
     box-sizing: border-box;
-    
     color:black;
     width: 350px;
     height: 300px;
@@ -157,26 +158,51 @@ input{
 }
 
 .animados{
-    background-color: black;
+    background-color: white;
     position:absolute;
-    left:21px;
-    top:-20px;
-    width: 75px;
-    height: 75px;
-    opacity: .50;
-    animation: dezplazamientoygiro 5s 1 ;
+    width: 90px;
+    height: 90px;
+    opacity: .10;
+    animation: dezplazamientoygiro 10s 1 ;
 }
 
 .animados:nth-child(1){
-    top:-20px;
-    left: 40%;
+    bottom:-30%;
+    left: 8%;
 }
 
 .animados:nth-child(2){
-    top:-60px;
-    left: 10%;
+    bottom:-60%;
+    left: 15%;
     transform: rotate(0deg);
 }
+.animados:nth-child(3){
+    bottom:-75%;
+    left: 26%;
+    transform: rotate(0deg);
+}
+.animados:nth-child(4){
+    bottom:-26%;
+    left: 36%;
+    transform: rotate(0deg);
+}
+.animados:nth-child(5){
+    bottom:-54%;
+    left: 56%;
+    transform: rotate(0deg);
+}
+.animados:nth-child(6){
+    bottom:-38%;
+    left: 76%;
+    transform: rotate(0deg);
+}
+.animados:nth-child(7){
+    bottom:-20%;
+    left:80%;
+    transform: rotate(0deg);
+}
+
+
 
 @keyframes dezplazamientoygiro{
     0%{
@@ -184,8 +210,15 @@ input{
     }
 
     100%{
-        top: 100%;
+        bottom: 100%;
         transform: rotate(1turn); 
     }
 
+}
+
+
+.errores{
+    position: absolute ;
+    bottom: 4px;
+    color:white
 }
