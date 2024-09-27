@@ -1,10 +1,14 @@
 <?php
+session_start();
 $r1=mt_rand(1,9);
 $r2=mt_rand(1,9);
 $captcha=$r1+$r2;
 $errores="";
-
-
+if(!isset($_SESSION["captcha"])){
+$_SESSION['captcha']=$captcha;
+}else{
+    echo "la captcha fue: ".$_SESSION["captcha"];
+}
 function camposLlenosPost(){
     foreach($_POST as $llave => $valor){
         if(empty($_POST[$llave])){
@@ -19,12 +23,15 @@ function camposLlenosPost(){
 
 
 if($_POST && camposLlenosPost()){
-    if( (int)$_POST['captcha']==$captcha ){
-        echo "capcha superada";
+    if( (int)$_POST['captcha']==$_SESSION['captcha'] ){
+        echo "correcto";
     }else{
-        echo "Capcha erronea";
+        $errores.="Capcha erronea";
     }
+}elseif($_POST && !camposLlenosPost()){
+    $errores.="campos vacios";
 }
+
 
 
 include "login_vista.php"
