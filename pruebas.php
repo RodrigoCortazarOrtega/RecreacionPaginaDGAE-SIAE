@@ -1,23 +1,7 @@
 <?php 
-
-$a1=[1,2,4];
-$a2=[];
-$d="JEJEJ";
-$d2;
-
-
-echo "<h2>Pruebas funcion 'isempty'</h2>";
-echo "is set? ";
-if(isset($d2)){
-    echo "Si";
-}else{
-    echo "No";
-}
-
-
-
+    echo "Captcha Correcta";
 ?>
-<?php
+
 /*
 <!DOCTYPE html>
 <html lang="en">
@@ -35,6 +19,3 @@ if(isset($d2)){
 </body>
 </html
 
-
-*/
-?>
