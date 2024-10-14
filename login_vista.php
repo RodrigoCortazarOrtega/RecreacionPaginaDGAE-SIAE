@@ -22,6 +22,8 @@
                 <div class="animados"></div>
                 <div class="animados"></div>
                 <div class="animados"></div>
+                <div class="animados"></div>
+                
                 
                 <h1>Bienvenido al SIAE</h1>
                 

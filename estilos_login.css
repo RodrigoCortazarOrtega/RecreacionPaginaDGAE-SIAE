@@ -159,61 +159,152 @@ input{
 
 .animados{
     background-color: white;
+    /*border: 10px solid black;*/
     position:absolute;
     width: 90px;
     height: 90px;
-    opacity: .10;
-    animation: dezplazamientoygiro 10s 1 ;
+    opacity: .20;
 }
 
 .animados:nth-child(1){
     bottom:-30%;
     left: 8%;
+    height: 60px;
+    width: 60px;
+    animation: dg1 6s linear infinite ;
 }
 
 .animados:nth-child(2){
     bottom:-60%;
     left: 15%;
     transform: rotate(0deg);
+    height: 15px;
+    width: 15px;
+    animation: dg2 8s linear infinite;
 }
 .animados:nth-child(3){
     bottom:-75%;
     left: 26%;
+    height: 100px;
+    width: 100px;
     transform: rotate(0deg);
+    animation: dg3 12s linear infinite ;
 }
 .animados:nth-child(4){
     bottom:-26%;
     left: 36%;
+    height: 20px;
+    width: 20px;
     transform: rotate(0deg);
+    animation: dg4 4s linear infinite ;
 }
 .animados:nth-child(5){
     bottom:-54%;
     left: 56%;
+    height: 120px;
+    width: 120px;
     transform: rotate(0deg);
+    animation: dg5 10s linear infinite ;
 }
 .animados:nth-child(6){
-    bottom:-38%;
-    left: 76%;
+    bottom:-78%;
+    left: 70%;
+    height: 30px;
+    width: 30px;
     transform: rotate(0deg);
+    animation: dg6 8s linear infinite ;
 }
+
 .animados:nth-child(7){
-    bottom:-20%;
+    bottom:-35%;
     left:80%;
+    height: 100px;
+    width: 100px;
     transform: rotate(0deg);
+    animation: dg7 12s linear infinite ;
+}
+
+.animados:nth-child(8){
+    bottom:-50%;
+    left:90%;
+    height: 20px;
+    width: 20px;
+    transform: rotate(0deg);
+    animation: dg8 9s linear infinite ;
 }
 
 
-
-@keyframes dezplazamientoygiro{
-    0%{
+@keyframes dg1{
+    0%{        
         transform: rotate(0turn); 
     }
-
     100%{
-        bottom: 100%;
+        bottom: 110%;
         transform: rotate(1turn); 
     }
-
+}
+@keyframes dg2{
+    0%{        
+        transform: rotate(0turn); 
+    }
+    100%{
+        bottom: 115%;
+        transform: rotate(1turn); 
+    }
+}
+@keyframes dg3{
+    0%{        
+        transform: rotate(0turn); 
+    }
+    100%{
+        bottom: 120%;
+        transform: rotate(1turn); 
+    }
+}
+@keyframes dg4{
+    0%{        
+        transform: rotate(0turn); 
+    }
+    100%{
+        bottom: 110%;
+        transform: rotate(1turn); 
+    }
+}
+@keyframes dg5{
+    0%{        
+        transform: rotate(0turn); 
+    }
+    100%{
+        bottom: 105%;
+        transform: rotate(1turn); 
+    }
+}
+@keyframes dg6{
+    0%{        
+        transform: rotate(0turn); 
+    }
+    100%{
+        bottom: 125%;
+        transform: rotate(1turn); 
+    }
+}
+@keyframes dg7{
+    0%{        
+        transform: rotate(0turn); 
+    }
+    100%{
+        bottom: 135%;
+        transform: rotate(1turn); 
+    }
+}
+@keyframes dg8{
+    0%{        
+        transform: rotate(0turn); 
+    }
+    100%{
+        bottom: 105%;
+        transform: rotate(1turn); 
+    }
 }
 
 

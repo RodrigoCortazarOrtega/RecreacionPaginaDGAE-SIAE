@@ -15,20 +15,21 @@ function camposLlenosPost(){
     
 
 if(!isset($_SESSION["captcha"])){
-    echo "if<br>";
+    //echo "if<br>";
     $_SESSION["captcha"]=$captcha;
 }
 
 
-echo "EL CAPTCHA ES: $captcha<br>";
-echo "captcha de session:".$_SESSION['captcha']."<br>";
+//echo "EL CAPTCHA ES: $captcha<br>";
+//echo "captcha de session:".$_SESSION['captcha']."<br>";
 
 if($_POST && camposLlenosPost()){
     
-    echo "captcha de POST:".$_POST['captcha'];
+    //echo "captcha de POST:".$_POST['captcha'];
     if($_POST["captcha"]==$_SESSION["captcha"]) {
-        echo "--------captcha correcta</br>";
-        header("Location: pruebas.php");
+        //echo "--------captcha correcta</br>";
+        header("Location: personalizado.html");
+
         exit();
     }else{
         $errores.="captcha erronea";
